@@ -15,32 +15,20 @@ It administrates the list of registered applications.
 * Other applications can use the RO notification services (e.g. */v1/notify-approval*) to subscribe for notifications about approval or registration status. If an applicationd has dependencies to other applications it needs to know if these applications services are available and can be used or not.
 
 **Basic Services**  
-* */v1/register-application*: adds the given application to the list of known applications
-* */v1/deregister-application*: removes the given application from the list of known applications
-* */v1/regard-updated-approval-status*: updates the approval status of an already registered application
-* */v1/list-applications*: provides a list of all registered applications 
-* */v1/list-applications-in-generic-representation*: the list of applications is provided in generic representation
-* */v1/inquire-application-type-approvals*: offers subscribing to notifications about new registrations
-* */v1/notify-deregistrations*: offers subscribing to notifications about withdrawn registrations
-* */v1/notify-approvals*: offers subscribing to notifications about new approvals
-* */v1/notify-withdrawn-approvals*: offers subscribing to notifications about withdrawn approvals
-* */v1/relay-server-replacement*: offers broadcasting of information about an updated serving application
-* */v1/relay-operation-update*: offers broadcasting of information about backward compatible operations
-
 
 |Service|Description|
 |---|---|
-|/v1/register-application|adds the given application to the list of known applications|
-|/v1/deregister-application|removes the given application from the list of known applications|
-|/v1/regard-updated-approval-status|updates the approval status of an already registered application|
-|/v1/list-applications|provides a list of all registered applications|
-|/v1/list-applications-in-generic-representation|the list of applications is provided in generic representation|
-|/v1/inquire-application-type-approvals|offers subscribing to notifications about new registrations|
-|/v1/notify-deregistrations|offers subscribing to notifications about withdrawn registrations|
-|/v1/notify-approvals|offers subscribing to notifications about new approvals|
-|/v1/notify-withdrawn-approvals|offers subscribing to notifications about withdrawn approvals|
-|/v1/relay-server-replacement|offers broadcasting of information about an updated serving application|
-|/v1/relay-operation-update|offers broadcasting of information about backward compatible operations|
+|/v1/register-application | Adds the given application to the list of known applications|
+|/v1/deregister-application | Removes the given application from the list of known applications|
+|/v1/regard-updated-approval-status | Updates the approval status of an already registered application|
+|/v1/list-applications | Provides a list of all registered applications|
+|/v1/list-applications-in-generic-representation | The list of applications is provided in generic representation|
+|/v1/inquire-application-type-approvals | Offers subscribing to notifications about new registrations|
+|/v1/notify-deregistrations | Offers subscribing to notifications about withdrawn registrations|
+|/v1/notify-approvals | Offers subscribing to notifications about new approvals|
+|/v1/notify-withdrawn-approvals | Offers subscribing to notifications about withdrawn approvals|
+|/v1/relay-server-replacement | Offers broadcasting of information about an updated serving application|
+|/v1/relay-operation-update | Offers broadcasting of information about backward compatible operations|
 
 ![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
 
