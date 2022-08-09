@@ -18,6 +18,7 @@ It administrates the list of registered applications.
 
 |Service|Description|
 |---|---|
+|/v1/start-application-in-generic-representation | Starts application in generic representation|
 |/v1/register-application | Adds the given application to the list of known applications|
 |/v1/deregister-application | Removes the given application from the list of known applications|
 |/v1/regard-updated-approval-status | Updates the approval status of an already registered application|
@@ -33,31 +34,68 @@ It administrates the list of registered applications.
 ![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
 
 ### TypeApprovalRegister
-The TypeApprovalRegister stores already granted approvals
+The TypeApprovalRegister (TAR) stores already granted approvals.
+
+**What is the purpose of TypeApprovalRegister?**  
+When a new application wants to register at the RegistryOffice the RegistryOffice requests the of this application from the TypeApprovalRegistry. 
+The actual approval is done by a human. After the human has decided about the approval, the related information is sent back to the RegistryOffice.  
+The TypeApprovalRegister stores already granted approvals.
+
+**What is the importance of documenting an approval status of an application by a Type approver?**
+Only after the approval has been granted an application will be embedded into the MS environment and can be used by users and other applications. 
+I.e. applications without approval are not (or no longer) available for usage. To ensure this functionality, the approvals have to be maintained 
+in the type approval register.
+
+|Service|Description|
+|---|---|
+| /v1/start-application-in-generic-representation | Starts application in generic representation |
+| /v1/regard-application | Adds the application to the list of applications stored in the type approval register |
+| /v1/disregard-application | Deletes the record of an application from the type approval register |
+| /v1/document-approval-status | Creates or updates the approval status of an application |
+| /v1/list-applications | Provides list of applications from the type approval register |
+| /v1/list-approved-applications-in-generic-representation | Provides list of approved applications in generic representation |
+| /v1/redirect-info-about-approval-status-changes | Offers subscribing to notifications about documentation of an approval status |
+
+
 
 ![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
 
 ### ExecutionAndTraceLog
 ExecutionAndTraceLog is logging all service activities
 
+|Service|Description|
+|---|---|
+
 ![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
 
 ### OamLog
 OamLog is logging all administrative activities
 
-![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
 
 ### AdministratorAdministration
 AdministratorAdministration is authenticating OaM requests
 
+
+|Service|Description|
+|---|---|
+
 ![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
+
 
 ### ApplicationLayerTopology
 ApplicationLayerTopology represents interfaces and forwardings
 
+|Service|Description|
+|---|---|
+
 ![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
+
 
 ### OperationKeyManagement
 OperationKeyManagement keeps operation keys in synch
+
+|Service|Description|
+|---|---|
+
 
 [<- Back to Specifying](../SpecifyingApplications/SpecifyingApplications.md) - - - [Up to Main](../Main.md) - - - [Ahead to ApplicationPattern ->](../ElementsApplicationPattern/ElementsApplicationPattern.md)
