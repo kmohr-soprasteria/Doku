@@ -4,7 +4,7 @@
 All applications will automatically register at the RegistryOffice (RO).
 
 **What is the purpose of RegistryOffice?**  
-The Registry office application is the entry point for all applications to get provisioned in the SDN application layer microservice architecture. It provides functionality to register and deregister an application from the MS environment. Its main purpose it to create accurate records of the registered applications and forward it to appropriate tiny application controllers for further formalities.  
+The RegistryOffice application is the entry point for all applications to get provisioned in the SDN application layer microservice architecture. It provides functionality to register and deregister an application from the MS environment. Its main purpose it to create accurate records of the registered applications and forward it to appropriate tiny application controllers for further formalities.  
 It administrates the list of registered applications.
 
 **Role in provisioning and deprovisioning an application to/from the ApplicationLayer**  
