@@ -41,7 +41,7 @@ When a new application wants to register at the RegistryOffice the RegistryOffic
 The actual approval is done by a human. After the human has decided about the approval, the related information is sent back to the RegistryOffice.  
 The TypeApprovalRegister stores already granted approvals.
 
-**What is the importance of documenting an approval status of an application by a Type approver?**
+**What is the importance of documenting an approval status of an application by a Type approver?**  
 Only after the approval has been granted an application will be embedded into the MS environment and can be used by users and other applications. 
 I.e. applications without approval are not (or no longer) available for usage. To ensure this functionality, the approvals have to be maintained 
 in the type approval register.
