@@ -27,6 +27,21 @@ It administrates the list of registered applications.
 * */v1/relay-server-replacement*: offers broadcasting of information about an updated serving application
 * */v1/relay-operation-update*: offers broadcasting of information about backward compatible operations
 
+
+|Service|Description|
+|---|---|
+|/v1/register-application|adds the given application to the list of known applications|
+|/v1/deregister-application|removes the given application from the list of known applications|
+|/v1/regard-updated-approval-status|updates the approval status of an already registered application|
+|/v1/list-applications|provides a list of all registered applications|
+|/v1/list-applications-in-generic-representation|the list of applications is provided in generic representation|
+|/v1/inquire-application-type-approvals|offers subscribing to notifications about new registrations|
+|/v1/notify-deregistrations|offers subscribing to notifications about withdrawn registrations|
+|/v1/notify-approvals|offers subscribing to notifications about new approvals|
+|/v1/notify-withdrawn-approvals|offers subscribing to notifications about withdrawn approvals|
+|/v1/relay-server-replacement|offers broadcasting of information about an updated serving application|
+|/v1/relay-operation-update|offers broadcasting of information about backward compatible operations|
+
 ![colorline_blue](https://user-images.githubusercontent.com/57349523/154715704-2e1a7c51-17c2-47af-a46a-85bd613f4a53.jpg)
 
 ### TypeApprovalRegister
